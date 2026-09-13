@@ -1,0 +1,230 @@
+[
+  {
+    "id": 1,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 1",
+    "title_en": "Simulation Package 1",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 2,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 2",
+    "title_en": "Simulation Package 2",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 3,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 3",
+    "title_en": "Simulation Package 3",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 4,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 4",
+    "title_en": "Simulation Package 4",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 5,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 5",
+    "title_en": "Simulation Package 5",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 6,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 6",
+    "title_en": "Simulation Package 6",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 7,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 7",
+    "title_en": "Simulation Package 7",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 8,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 8",
+    "title_en": "Simulation Package 8",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 9,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 9",
+    "title_en": "Simulation Package 9",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 10,
+    "is_final_exam": false,
+    "badge_tag": "",
+    "title_id": "Paket Simulasi 10",
+    "title_en": "Simulation Package 10",
+    "description_id": "35 Soal Kisi-kisi Resmi Apple Developer Academy: Logika & Figural CPNS Medium (dengan Opsi Bergambar), Computational Thinking, AI & Matriks, Swift, OOP.",
+    "description_en": "35 Official Academy Test Questions: Logic & CPNS Medium Figural (with Visual SVG Options), Computational Thinking, AI & Matrices, Swift, OOP.",
+    "duration_minutes": 120,
+    "total_questions": 35,
+    "difficulty": "Standard Academy Level",
+    "category_distribution": {
+      "logic": 10,
+      "comp_thinking": 8,
+      "ai_math": 6,
+      "swift": 6,
+      "oop": 5
+    }
+  },
+  {
+    "id": 11,
+    "is_final_exam": true,
+    "badge_tag": "FINAL EXAM (50 SOAL)",
+    "title_id": "Final Exam Cohort Simulation - Paket A",
+    "title_en": "Final Exam Cohort Simulation - Package A",
+    "description_id": "Simulasi Ujian Penuh 50 Soal Realistis (Standar Seleksi Apple Developer Academy): Komprehensif Logika & Figural CPNS Medium (Opsi Visual Penuh), Algoritma Lanjut, AI Math, Swift Modern, & Architecture.",
+    "description_en": "Authentic 50-Question Final Exam Simulation (Official Academy Standard): Comprehensive Logic, Medium CPNS Figural (Full Visual Options), Advanced CT, AI Math, Swift, & System Architecture.",
+    "duration_minutes": 120,
+    "total_questions": 50,
+    "difficulty": "Realistic Final Exam (50 Qs)",
+    "category_distribution": {
+      "logic": 15,
+      "comp_thinking": 12,
+      "ai_math": 8,
+      "swift": 8,
+      "oop": 7
+    }
+  },
+  {
+    "id": 12,
+    "is_final_exam": true,
+    "badge_tag": "FINAL EXAM (50 SOAL)",
+    "title_id": "Final Exam Cohort Simulation - Paket B",
+    "title_en": "Final Exam Cohort Simulation - Package B",
+    "description_id": "Simulasi Ujian Penuh 50 Soal Realistis (Standar Seleksi Apple Developer Academy): Uji Ketahanan Berpikir Komputasi, Penalaran Visual Matriks Spasial & Opsi Bergambar, Swift OOP, & Problem Solving 120 Menit.",
+    "description_en": "Authentic 50-Question Final Exam Simulation (Official Academy Standard): Computational Endurance, Spatial Figural Matrices with Visual Options, Swift OOP, & Problem Solving under 120 Minutes.",
+    "duration_minutes": 120,
+    "total_questions": 50,
+    "difficulty": "Realistic Final Exam (50 Qs)",
+    "category_distribution": {
+      "logic": 15,
+      "comp_thinking": 12,
+      "ai_math": 8,
+      "swift": 8,
+      "oop": 7
+    }
+  }
+]

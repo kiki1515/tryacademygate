@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>AcademyGate — Simulator Tes Online Apple Developer Academy</title>
+  <meta name="description" content="AcademyGate: simulasi tes online Apple Developer Academy dengan 12 paket soal (10 standar @35 butir & 2 final exam @50 butir), kisi-kisi resmi logika & figural CPNS, computational thinking, matriks AI, Swift, dan OOP.">
+  <meta name="theme-color" content="#07080b">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Application CSS -->
+  <link rel="stylesheet" href="/static/dist/css/main.min.css?v=20260913_173115">
+  <link rel="stylesheet" href="/static/dist/css/exam.min.css?v=20260913_173115">
+  <link rel="stylesheet" href="/static/dist/css/result.min.css?v=20260913_173115">
+</head>
+<body>
+  <div class="app-mesh-bg"></div>
+
+  <!-- Main Navigation (Visible on Portal & Result Views) -->
+  <nav class="app-nav" id="main-nav">
+    <div class="container nav-content">
+      <div class="brand-wrapper">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-title">
+          <span>AcademyGate</span>
+          <span class="brand-badge">Apple Dev Tryout</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Study Materials Navigation Button -->
+        <button class="liquid-glass-btn btn-sm" id="btn-nav-materials" title="Materi & Ringkasan Kisi-Kisi">
+          <div class="liquid-glass-glare"></div>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span class="hide-mobile" id="nav-materials-label">Materi & Kisi-Kisi</span>
+        </button>
+
+        <!-- Author Profile Button -->
+        <button class="liquid-glass-btn btn-sm" id="btn-nav-author" title="Profil Pengembang">
+          <div class="liquid-glass-glare"></div>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="hide-mobile" id="nav-author-label">Profil Author</span>
+        </button>
+
+        <!-- Liquid Glass Language Switcher -->
+        <div class="liquid-glass-switcher" id="global-lang-switcher" data-active="id" title="Pilih Bahasa / Switch Language">
+          <div class="liquid-glass-glare"></div>
+          <div class="liquid-glass-pill" id="global-lang-pill"></div>
+          <button class="liquid-glass-item active" data-lang="id">
+            <span class="liquid-glass-text">ID</span>
+          </button>
+          <button class="liquid-glass-item" data-lang="en">
+            <span class="liquid-glass-text">EN</span>
+          </button>
+        </div>
+
+        <!-- Liquid Glass Horizontal Pill Theme Switcher (Dark / Light) -->
+        <div class="liquid-glass-switcher theme-pill-switcher" id="global-theme-switcher" data-active="dark" title="Pilih Tema (Dark / Light)">
+          <div class="liquid-glass-glare"></div>
+          <div class="liquid-glass-pill" id="global-theme-pill"></div>
+          <button class="liquid-glass-item active" data-theme="dark" title="Dark Mode">
+            <span class="liquid-glass-text" style="display: flex; align-items: center; gap: 5px;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              <span class="hide-mobile">Dark</span>
+            </span>
+          </button>
+          <button class="liquid-glass-item" data-theme="light" title="Light Mode">
+            <span class="liquid-glass-text" style="display: flex; align-items: center; gap: 5px;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <span class="hide-mobile">Light</span>
+            </span>
+          </button>
+        </div>
+        <!-- Mobile Hamburger Dropdown Toggle (mobile only) -->
+        <button class="nav-mobile-toggle" id="btn-nav-mobile-menu" aria-label="Menu" aria-expanded="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="15" y2="18"/></svg>
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Glass Dropdown Menu (toggled by hamburger, mobile only) -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <button class="liquid-glass-btn" data-nav-action="materials">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span id="menu-materials-label">Materi & Kisi-Kisi</span>
+    </button>
+    <button class="liquid-glass-btn" data-nav-action="author">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      <span id="menu-author-label">Profil Author</span>
+    </button>
+    <div class="menu-separator"></div>
+    <div class="switcher-row">
+      <span class="switcher-row-label" id="menu-lang-row-label">Bahasa</span>
+      <div class="liquid-glass-switcher" id="menu-lang-switcher" data-active="id" title="Pilih Bahasa / Switch Language">
+        <div class="liquid-glass-glare"></div>
+        <div class="liquid-glass-pill"></div>
+        <button class="liquid-glass-item active" data-lang="id">
+          <span class="liquid-glass-text">ID</span>
+        </button>
+        <button class="liquid-glass-item" data-lang="en">
+          <span class="liquid-glass-text">EN</span>
+        </button>
+      </div>
+    </div>
+    <div class="switcher-row">
+      <span class="switcher-row-label" id="menu-theme-row-label">Tema</span>
+      <div class="liquid-glass-switcher theme-pill-switcher" id="menu-theme-switcher" data-active="dark" title="Pilih Tema (Dark / Light)">
+        <div class="liquid-glass-glare"></div>
+        <div class="liquid-glass-pill"></div>
+        <button class="liquid-glass-item" data-theme="dark" title="Dark Mode">
+          <span class="liquid-glass-text">Dark</span>
+        </button>
+        <button class="liquid-glass-item" data-theme="light" title="Light Mode">
+          <span class="liquid-glass-text">Light</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPA Views Containers -->
+  <div id="portal-view-container"></div>
+  <div id="materials-view-container" style="display: none;"></div>
+  <div id="author-view-container" style="display: none;"></div>
+  <div id="exam-view-container" style="display: none;"></div>
+  <div id="result-view-container" style="display: none;"></div>
+
+  <!-- Global Toast Alerts Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Interactive Scratchpad Modal -->
+  <div class="modal-overlay scratchpad-modal" id="scratchpad-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <h3 class="modal-title">Papan Coretan & Kalkulasi</h3>
+          <div class="scratchpad-tabs">
+            <button class="btn btn-primary btn-sm active" id="tab-scratch-draw">Canvas Coret</button>
+            <button class="btn btn-secondary btn-sm" id="tab-scratch-notes">Notepad Teks</button>
+          </div>
+        </div>
+        <button class="btn btn-ghost btn-sm" onclick="window.AppInstance?.examEngine?.scratchpad?.close()" aria-label="Tutup">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Draw Tab View -->
+      <div id="scratch-draw-view" style="display: flex; flex-direction: column; flex: 1; gap: 10px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <div style="display: flex; gap: 8px;">
+            <button class="btn btn-primary btn-sm" id="scratch-pen-btn">Pena</button>
+            <button class="btn btn-secondary btn-sm" id="scratch-eraser-btn">Penghapus</button>
+          </div>
+          <button class="btn btn-outline btn-sm" id="scratch-clear-btn" style="color: var(--accent-red);">Bersihkan Canvas</button>
+        </div>
+        <div class="scratchpad-canvas-wrap">
+          <canvas id="scratchpad-canvas" class="scratchpad-canvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Notes Tab View -->
+      <div id="scratch-notes-view" style="display: none; flex-direction: column; flex: 1;">
+        <textarea id="scratchpad-textarea" class="scratchpad-textarea" placeholder="Tulis catatan cepat, perhitungan deret angka, atau analisis logika Anda di sini..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container">
+      <p>© 2026 AcademyGate — Apple Developer Academy Tryout Simulator. Dikembangkan oleh <a href="javascript:void(0)" id="footer-author-link" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Muhammad Fikri Khrisna</a>.</p>
+      <p style="margin-top: 4px; font-size: 0.75rem; color: var(--text-tertiary);">Simulasi resmi berbasis kisi-kisi: Logika, Computational Thinking, AI/Matriks, Pemrograman Swift, dan OOP.</p>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="/static/dist/js/ui-feedback.min.js?v=20260913_173115"></script>
+  <script src="/static/dist/js/scratchpad.min.js?v=20260913_173115"></script>
+  <script src="/static/dist/js/materials.min.js?v=20260913_173115"></script>
+  <script src="/static/dist/js/exam.min.js?v=20260913_173115"></script>
+  <script src="/static/dist/js/result.min.js?v=20260913_173115"></script>
+  <script src="/static/dist/js/app.min.js?v=20260913_173115"></script>
+</body>
+</html>
